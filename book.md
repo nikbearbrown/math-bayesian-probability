@@ -12,7 +12,7 @@
 
 # Bayesian Probability
 
-**Author:** Nik Bear Brown
+**Author:** Humanitarians AI
 
 ---
 

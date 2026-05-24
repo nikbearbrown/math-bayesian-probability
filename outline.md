@@ -14,7 +14,7 @@
 
 # Bayesian Probability — Outline
 
-**Author:** Nik Bear Brown
+**Author:** Humanitarians AI
 
 ---
 
