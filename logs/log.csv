@@ -1,0 +1,15 @@
+date,book,chapter_slug,word_count,sources_count,verify_flag_count,pantry_notes_found,pantry_lib_files_used,thin_pantry,mechanism_explained,contested_claims_flagged
+2026-06-01,math-bayesian-probability,00-probability-foundations,2453,7,1,yes,0,no,Conditional-probability asymmetry P(A|B) != P(B|A) derived and shown via the Sally Clark fallacy,0
+2026-06-01,math-bayesian-probability,01-the-same-question-two-answers,3167,9,0,yes,0,no,The Bayes denominator: why a rare-disease false-positive pool swamps the true-positive pool,0
+2026-06-01,math-bayesian-probability,02-prompting-for-statistics,3788,7,3,yes,0,no,The correct-code/wrong-interpretation LLM failure mode shown via a corrected dialogue,0
+2026-06-01,math-bayesian-probability,03-counting-and-estimating,4175,5,0,yes,0,no,Beta-Binomial conjugate update and the confidence-vs-credible-interval distinction,0
+2026-06-01,math-bayesian-probability,04-comparing-two-groups,4765,8,2,yes,0,no,Ioannidis PPV calculation: the replication crisis as structural math not fraud,1
+2026-06-01,math-bayesian-probability,05-regression-both-ways,4954,8,2,yes,0,no,OLS = MAP under a flat prior; posterior predictive vs prediction interval; asymmetry rule named,1
+2026-06-01,math-bayesian-probability,06-model-comparison,4198,7,0,yes,0,no,Bayes factor via marginal-likelihood integration and its prior-sensitivity vulnerability vs PSIS-LOO,1
+2026-06-01,math-bayesian-probability,07-priors,4272,7,4,yes,0,no,Normal-Normal posterior update under three priors and the hidden flat prior in the t-test,0
+2026-06-01,math-bayesian-probability,08-when-data-is-sparse,4534,9,2,yes,0,no,Type M / Type S errors and the winner's curse via significance-threshold selection; shrinkage,0
+2026-06-01,math-bayesian-probability,09-hierarchical-problems,4807,6,0,yes,0,no,Partial pooling via the shrinkage factor lambda = tau^2 / (tau^2 + sigma^2/n),0
+2026-06-01,math-bayesian-probability,10-time-and-sequence,4586,6,3,yes,0,no,The Kalman filter as exact Bayesian sequential updating for linear-Gaussian systems,0
+2026-06-01,math-bayesian-probability,11-classification-and-decision,4638,8,3,yes,0,no,Optimal threshold p* = c_FP / (c_FP + c_FN) derived from expected-cost minimization,2
+2026-06-01,math-bayesian-probability,12-a-real-problem-both-ways,4653,7,1,yes,0,no,The six-question comparative scaffold and the P(outcome > threshold) gap as capstone,1
+2026-06-01,math-bayesian-probability,13-choosing,5642,15,3,yes,0,no,The five-question method-selection framework and frequentist/Bayesian convergence,2

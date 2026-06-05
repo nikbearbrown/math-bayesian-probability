@@ -1,56 +1,39 @@
 # Introduction
 
-A professional opens a familiar task and notices that the work has changed shape. The old bottleneck was production: finding the information, drafting the document, calculating the answer, building the artifact. The new bottleneck is judgment. A machine can now produce something fluent enough to move through the workflow. The harder question is whether it should.
+A patient walks out of a clinic with a positive result on a test that is 99% accurate for a disease that affects one person in a thousand. How worried should they be? Most people — including, in a famous 1978 study, most of the Harvard medical staff asked — answer "about 99%." The actual answer is closer to 9%. The test is excellent. The intuition is catastrophic. And the gap between the two is the subject of this book.
 
-This book is about the gap between domain work as it used to be taught and domain work as it now has to be practiced with AI in the room.
-
-The central argument is simple and contestable: the professional advantage in Bayesian Probability no longer comes from doing every step by hand. It comes from knowing what to delegate, what to verify, what to reject, and what human judgment must still own because the consequences attach to a person, a community, an institution, or a client.
-
-This is a textbook for readers who want to use AI without surrendering the part of the work that makes them responsible. It is for learners, teachers, practitioners, and contributors who need a practical map rather than another list of tools.
+That gap is not a trick. It is the difference between two questions that sound identical and are not. *How surprising is this result if the patient is healthy?* and *How likely is this patient to be sick?* are different questions with different answers, and a great deal of confusion — in medicine, in courtrooms, in published science — comes from answering the first while believing you have answered the second.
 
 ## What This Book Is
 
-Bayesian Probability is a guided course in the concepts, workflows, and judgment calls that define Bayesian Probability in the AI era. It teaches vocabulary, recurring patterns, practical exercises, and the discipline of checking machine output against human purpose.
-
-The book names the work that AI can accelerate and the work that still requires human interpretation. It treats AI as infrastructure: powerful, fast, useful, and incomplete. The point is not to become impressed by the machine. The point is to become more precise about what the human is for.
+This book teaches statistical inference by solving every problem two ways: first with frequentist methods (the p-values, confidence intervals, and significance tests most readers have already met), then with Bayesian methods (which assign probabilities directly to the hypotheses you care about), set side by side on the same data. It is a working course, not a survey. Each chapter takes a concrete problem, builds both solutions completely, shows exactly where the frequentist approach strains, shows what the Bayesian approach buys and what it costs, and ends by asking the reader to choose.
 
 ## What This Book Is Not
 
-This book is not a promise that AI will solve Bayesian Probability. It is not a tool manual frozen to one product release. It is not legal, medical, financial, or professional advice for a specific jurisdiction or institution. When a chapter touches regulated practice, compliance, clinical care, finance, education policy, or public stakes, the reader should treat the material as a framework for judgment and seek qualified guidance where the decision requires it.
+This book is not an argument that Bayesian methods are superior. They are not, in general — there are problems and settings where frequentist methods are the right and even the required choice, and the book names them plainly. It is not a full course in Markov chain Monte Carlo or probabilistic programming; where that depth is needed, the reader is pointed onward (McElreath's *Statistical Rethinking* is the standard next step). And it is not a coding manual: implementation is done with AI assistance, so the reader can concentrate on the reasoning.
 
-The book assumes curiosity, basic literacy in the domain, and a willingness to test claims rather than merely repeat them. It does not assume that the reader is already an AI expert.
+## The Concept Running Through the Book
 
-## The Running Concept
+The recurring idea is **the choice itself**. Neither paradigm is universally correct. Competent practice is selecting the right approach for the problem in front of you — given what the decision-maker actually needs, whether defensible prior information exists, how much data there is, and who will receive the result. Every chapter is built to make that choice visible by performing both analyses, so that by Chapter 13 the reader has a framework for choosing rather than a default to reach for.
 
-The running concept is the boundary between execution and judgment. AI systems are increasingly strong at execution-shaped work: generating, summarizing, transforming, classifying, drafting, coding, and searching. Human beings remain responsible for problem formulation, plausibility auditing, causal interpretation, ethical tradeoffs, social context, and accountability under stakes.
-
-A recurring danger is the fluency trap: the tendency to treat polished output as evidence that the underlying work has been done. Fluency is useful. It is not proof. Across the chapters, watch for the moment when a fluent artifact needs a human test.
-
+A second thread runs underneath: the division of labor between human and machine. The book uses AI to *execute* analyses and asks the reader to *judge* them — to formulate the question, specify the prior, and verify that the output is right rather than merely fluent. That division is the heart of the Irreducibly Human series, laid out in the appendix *The Fundamental Themes*.
 
 ## How This Book Is Organized
 
-The chapters are arranged as a sequence of practical confrontations with the same larger problem: what changes when AI can do part of the work, but not own the consequences?
+A short **Chapter 0** resolves the only prerequisites — conditional probability and Bayes' theorem as arithmetic — and can be skipped by readers already comfortable with them. **Act One (Chapters 1–4)** establishes that the paradigms answer different questions and teaches AI-assisted implementation. **Act Two (Chapters 5–9)** builds the methods where the divergence carries decision weight: regression, model comparison, priors, sparse data, hierarchical models. **Act Three (Chapters 10–13)** covers time and sequential updating, classification as a decision under costs, a guided capstone on a real dataset, and a closing framework for choosing.
 
-[TABLE OF CONTENTS PLACEHOLDER]
+## How to Read This Book
 
-## How To Read This Book
-
-Read the opening chapters in order if you are new to the subject. They establish the vocabulary and the boundary conditions. Later chapters can usually be read as focused modules, especially if you are looking for a specific workflow, case, or professional risk.
-
-Do the exercises. The point of an AI-era textbook is not recognition. It is transfer: can you take the distinction from the page and use it on a task the book has never seen?
+Read Chapter 0 first if conditional probability is rusty, then Chapter 2 before relying on the AI-implementation sections in later chapters — the rest of the book assumes that skill. After that, the chapters build in order, but a reader consulting the book for a specific problem can jump to the nearest chapter, provided they keep the comparative habit: always ask what each approach can and cannot tell you.
 
 ## A Note About AI
 
-This book was made in the same world it describes. Agentic AI systems were used to gather source material, draft candidate passages, check assertions, generate examples, and support editorial workflows. That does not make the book machine-authored. It makes the production boundary explicit.
-
-The editorial claim of the AI+1 series is that AI can help with execution while humans remain responsible for judgment. That means the book must be read with the same discipline it teaches. Claims should be checked. Examples should be tested. Definitions should be compared with practice. If something looks too smooth, slow down.
-
-The most important AI skill is not prompting. It is accountability. A prompt can produce output. A professional has to decide whether the output belongs in the world.
+This book is written for the AI era and uses AI throughout — to generate code, run analyses, and produce comparisons. It is not an invitation to outsource understanding. An AI will write statistical code that runs cleanly and computes the wrong thing; it will explain a result in language that quietly swaps a p-value for a posterior probability. Catching that requires exactly the judgment this book builds. The machine executes. You decide what to ask, which prior to defend, and whether the answer is true.
 
 ## Closing Return
 
-Return to the professional at the beginning: the familiar task, the new machine, the old responsibility. The machine has changed the tempo of the work. It has not removed the need for judgment. Start there. Then build.
+Return to the patient with the positive test. The arithmetic that turns 99% into 9% is not advanced — it is in Chapter 0. What is hard is knowing that the question demands it, recognizing when a confident answer is answering the wrong question, and being able to defend the method you chose. That recognition is the work this book is about. Begin with the next chapter.
 
 ## Tags
 
-Bayesian Probability, AI+1, Humanitarians AI, Irreducibly Human, agentic AI, computational skepticism
+#bayesian #probability #statistics #frequentist #inference #AI #Medhavy #Medhavi #IrreduciblyHuman #intelligent-textbook
